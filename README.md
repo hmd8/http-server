@@ -23,3 +23,7 @@ http://127.0.0.1:3000 to view your server
 p Port to use (defaults to 8080)
 
 h Address to use (defaults to 0.0.0.0)
+
+This will install a static file web server. Put it in your path to fire up servers in any directory.
+e.g
+http://localhost:8080/directory/page.html
