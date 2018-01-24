@@ -8,13 +8,15 @@ This will install http-server so that it may be run from the command line.
 
 # Usage:
 
-node http-server
+node server.js
+
+Now you can visit http://localhost:8080 to view your server
 
 OR
 
 h=127.0.0.1 p=3000 node server.js
 
-Now you can visit http://localhost:8080 to view your server
+http://127.0.0.1:3000 to view your server
 
 # Available Options:
 
