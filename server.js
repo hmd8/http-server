@@ -8,6 +8,14 @@ const port = process.env.p || 8080;
 
 const server = http.createServer((req, res) => {
 
+  if (req.url == '/' ) {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.write('Server running');
+    res.end();
+    return;
+  }
+
   const uri = url.parse(req.url).pathname;
   const serverPath = path.resolve(process.cwd() + '/../');
   const filename = path.join(serverPath, uri);
